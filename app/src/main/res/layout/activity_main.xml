@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/tetle_layout"></include>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/main_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/include"></android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignBottom="@id/main_viewpager"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <Button
+            android:id="@+id/main_bt_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:drawableTop="@mipmap/tab_home"
+            android:gravity="center"
+            android:text="月光茶人"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/main_bt_favorable"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:drawableTop="@mipmap/tab_topic"
+            android:gravity="center"
+            android:text="优惠"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/main_bt_cart"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:drawableTop="@mipmap/main_index_cart_normal"
+            android:gravity="center"
+            android:text="购物车"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/main_bt_my"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:drawableTop="@mipmap/main_index_my_normal"
+            android:gravity="center"
+            android:text="我的"
+            android:textSize="18sp" />
+    </LinearLayout>
+</RelativeLayout>
